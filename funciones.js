@@ -10,4 +10,9 @@ function calcularDisponible(){
     return total;
 }
 
+function calcularCapacidadPago(disponible){
+    let capacidadPago = disponible/2;
+    return capacidadPago;
+}
+
 

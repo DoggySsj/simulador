@@ -2,7 +2,9 @@
 function calcular(){
     let ingresos=parseFloat(document.getElementById("txtIngresos").textContent);
     let egresos=parseFloat(document.getElementById("txtEgresos").textContent);
-    let disponible=calcularDisponible();
-    document.getElementById("spnDisponible").textContent=disponible;
-    console.log(disponible);
+    let montoDisponible=calcularDisponible();
+    document.getElementById("spnDisponible").textContent=montoDisponible;
+
+    capacidadPago=calcularCapacidadPago(montoDisponible);
+    document.getElementById("spnCapacidadPago").textContent=capacidadPago;
 }
