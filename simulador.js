@@ -14,5 +14,16 @@ function calcular(){
     let interes=calcularInteresSimple(monto,intereses,plazoAnios);
     document.getElementById("spnInteresPagar").textContent=interes;
 
-    document.getElementById("spnTotalPrestamo").textContent=calcularTotalPagar(monto,interes);
+    let total=calcularTotalPagar(monto,interes);
+    document.getElementById("spnTotalPrestamo").textContent=total;
+
+    let cuotaMensual=calcularCuotaMensual(total,plazoAnios).toFixed(2);
+    document.getElementById("spnCuotaMensual").textContent=cuotaMensual;
+
+    let credito=aprobarCredito(capacidadPago,cuotaMensual)
+    if (credito==true){
+        document.getElementById("spnEstadoCredito").innerText="CREDITO APROBADO";
+    }else{
+        document.getElementById("spnEstadoCredito").innerText="CREDITO RECHAZADO";
+    }
 }
