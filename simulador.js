@@ -27,3 +27,7 @@ function calcular(){
         document.getElementById("spnEstadoCredito").innerText="CREDITO RECHAZADO";
     }
 }
+
+function reiniciar(){
+    location.reload();
+}

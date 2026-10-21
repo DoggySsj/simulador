@@ -1,0 +1,3 @@
+1.-Hola, actuda como un diseñador profesional y dale un aspecto empresarial, elegir una
+entidad financiera real o ficticia y usar su logo y colores a esta pagina, no toques la logica
+y hazla responsive:
