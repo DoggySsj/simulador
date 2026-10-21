@@ -13,4 +13,6 @@ function calcular(){
     let intereses=parseFloat(document.getElementById("txtTasaInteres").value);
     let interes=calcularInteresSimple(monto,intereses,plazoAnios);
     document.getElementById("spnInteresPagar").textContent=interes;
+
+    document.getElementById("spnTotalPrestamo").textContent=calcularTotalPagar(monto,interes);
 }
